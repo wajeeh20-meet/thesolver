@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles-merged.css">
+    <link rel="stylesheet" href="../static/css/style.min.css">
+    <link rel="stylesheet" href="../static/css/custom.css">
+	<title>Deleting</title>
+</head>
+<body>
+
+            <form action="/admin/delete" method="POST" class="probootstrap-form">
+                    <div class="form-group">
+                    	<select name="id">
+              	 	{%for i in Coms%}
+  					<option value="{{i.id}}">{{i.name}} {{i.id}}</option>
+					{%endfor%} 
+					</select>
+                    </div>
+                   <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="delete">
+                  </form>
+            
+
+<script src="../static/js/scripts.min.js"></script>
+ <script src="../static/js/main.min.js"></script>
+ <script src="../static/js/custom.js"></script>
+</body>
+</html>

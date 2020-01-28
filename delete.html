@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deleting</title>
+</head>
+<body>
+
+            <form action="/admin/delete" method="POST" class="probootstrap-form">
+                    <div class="form-group">
+                    	<select name="id">
+              	 	{%for i in Coms%}
+  					<option value="{{i.id}}">{{i.name}} {{i.id}}</option>
+					{%endfor%} 
+					</select>
+                    </div>
+                   <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="delete">
+                  </form>
+            
+</body>
+</html>

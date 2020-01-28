@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SolMeet &mdash;The Website That You are Looking for</title>
+    <meta name="description" content="Free Bootstrap Theme by ProBootstrap.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles-merged.css">
+    <link rel="stylesheet" href="../static/css/style.min.css">
+    <link rel="stylesheet" href="../static/css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="../static/js/vendor/html5shiv.min.js"></script>
+      <script src="../static/js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+	<title>admin</title>
+
+<body>
+<section class="probootstrap-section">
+        <div class="container">
+        		
+
+        	
+          
+         
+
+       <div class="col-md-3 col-sm-6">
+              <div class="probootstrap-teacher text-center probootstrap-animate">
+              	<div class="text "> 
+           
+              	
+ 	</div>
+              </div>
+          </div>
+
+              	
+          
+            <form action="/admin" method="POST" class="probootstrap-form">
+                    <div class="form-group">
+                    	<select name="id">
+              	 	{%for i in Coms%}
+  					<option value="{{i.id}}">{{i.name}} {{i.id}}</option>
+					{%endfor%} 
+					</select>
+                      <label for="name">response</label>
+                      <input type="text" class="form-control" id="response" name="response">
+                    </div>
+                   <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="respond">
+                  </form>
+            
+
+            
+
+      </section>
+  </div>
+ <a href="/admin/delete" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Go To Delete Page</a>
+
+ <script src="../static/js/scripts.min.js"></script>
+ <script src="../static/js/main.min.js"></script>
+ <script src="../static/js/custom.js"></script>
+  </body>
+
+</html>
